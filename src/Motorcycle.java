@@ -1,3 +1,3 @@
-public class Motorcycle { a
+public class Motorcycle {
 
 }
