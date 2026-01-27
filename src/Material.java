@@ -6,11 +6,23 @@
  * Author: Matthew Sulpizio
  * Date Developed: 1/20/26
  * Last Date Changed: 1/25/26
- * Rev: 1/25/26
+ * Rev: 1/26/26
 
  */
 
 // Enumeration for Frame Material
+/**
+ * Materials that can be used for the motorcycle frame.
+ */
 public enum Material {
-    STEEL, ALUMINUM, CARBON_FIBER, TITANIUM, MAGNESIUM
+    /** Steel frame material. */
+    STEEL,
+    /** Aluminum frame material. */
+    ALUMINUM,
+    /** Carbon Fiber frame material. */
+    CARBON_FIBER,
+    /** Titanium frame material. */
+    TITANIUM,
+    /** Magnesium frame material. */
+    MAGNESIUM
 }

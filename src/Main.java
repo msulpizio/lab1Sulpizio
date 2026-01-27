@@ -6,12 +6,25 @@
  * Author: Matthew Sulpizio
  * Date Developed: 1/20/26
  * Last Date Changed: 1/25/26
- * Rev: 1/25/26
+ * Rev: 1/26/26
 
  */
 
 // Main class
+/**
+ * Driver class for the Lab 1 motorcycle project.
+ */
 public class Main {
+    /**
+     * Default constructor for the Main driver class.
+     */
+    public Main() {
+    }
+    /**
+     * Motorcycle project start point. Creates motorcycle objects and prints their details.
+     *
+     * @param args command-line arguments
+     */
     public static void main(String[] args) {
         Motorcycle m1 = new Motorcycle("Blue", 60.0, Material.STEEL, 29.5, "630", "330", "Harley", "Street");
         Engine myEng = new Engine("630", "330");

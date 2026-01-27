@@ -11,6 +11,9 @@
  */
 
 // Motorcycle class
+/**
+ * Represents a motorcycle with color, size, frame, wheels, and engine details.
+ */
 public class Motorcycle {
     /**
      * The color of the motorcycle
@@ -21,11 +24,11 @@ public class Motorcycle {
      */
     private double size;
     /**
-     * The frame material of the motorcycle
+     * The frame of the motorcycle
      */
     private Frame frame;
     /**
-     * The wheel size of the motorcycle
+     * The wheels of the motorcycle
      */
     private Wheel[] wheels;
     /**
@@ -41,7 +44,7 @@ public class Motorcycle {
      */
     private String hp;
     /**
-     * The brand of the motorcycle
+     * The manufacturer of the motorcycle
      */
     private String manufacturer;
     /**
@@ -49,11 +52,16 @@ public class Motorcycle {
      */
     private String model;
     /**
+     * Constructs a Motorcycle with specific details.
      *
-     * Adds two numbers and returns the result.
-     *
-     * @param color This is the color of the motorcycle frame.
-     * @param size This is the size of the motorcycle frame.
+     * @param color the color of the motorcycle
+     * @param size the size of the motorcycle
+     * @param frameMaterial the frame material of the motorcycle
+     * @param wheelSize the wheel size of the motorcycle
+     * @param cc the engine cc of the motorcycle
+     * @param hp the engine hp of the motorcycle
+     * @param manufacturer the manufacturer of the motorcycle
+     * @param model the model of the motorcycle
      */
     public Motorcycle(String color, double size, Material frameMaterial, double wheelSize, String cc, String hp, String manufacturer, String model) {
         this.color = color;
@@ -62,35 +70,75 @@ public class Motorcycle {
         this.wheels = new Wheel[2];
         this.wheels[0] = new Wheel(wheelSize);
         this.wheels[1] = new Wheel(wheelSize);
+        this.cc = cc;
+        this.hp = hp;
+        this.manufacturer = manufacturer;
+        this.model = model;
     }
 
+    /**
+     * Returns the motorcycle color.
+     *
+     * @return the motorcycle color
+     */
     public String getColor(){
         return color;
     }
 
+    /**
+     * Sets the motorcycle color.
+     *
+     * @param color the motorcycle color
+     */
     public void setColor(String color){
         this.color = color;
     }
 
+    /**
+     * Returns the motorcycle size.
+     *
+     * @return the motorcycle size
+     */
     public double getSize(){
         return size;
     }
 
+    /**
+     * Sets the motorcycle size.
+     *
+     * @param size the motorcycle size
+     */
     public void setSize(double size){
         this.size = size;
     }
 
+    /**
+     * Returns the frame material.
+     *
+     * @return the frame material
+     */
     public Material getFrameMaterial(){
         return frame.getMaterial();
     }
 
+    /**
+     * Returns the wheel size.
+     *
+     * @return the wheel size
+     */
     public double getWheelSize(){
         return wheels[0].getSize();
     }
 
+    /**
+     * Prints a message that the motorcycle started.
+     */
     public void start() {
         System.out.println("Motorcycle started!");
     }
+    /**
+     * Prints a message that the motorcycle stopped.
+     */
     public void stop() {
         System.out.println("Motorcycle stopped.");
     }
