@@ -6,7 +6,7 @@
  * Author: Matthew Sulpizio
  * Date Developed: 1/20/26
  * Last Date Changed: 1/25/26
- * Rev: 1/25/26
+ * Rev: 1/26/26
 
  */
 
@@ -28,6 +28,10 @@ public class Motorcycle {
      * The wheel size of the motorcycle
      */
     private Wheel[] wheels;
+    /**
+     * The Engine of the motorcycle
+     */
+    private Engine engine;
     /**
      * The Engine cc of the motorcycle
      */
